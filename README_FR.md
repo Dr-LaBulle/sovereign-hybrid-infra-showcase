@@ -94,7 +94,7 @@ Lisible pour :
 ### Homelab privé (Portugal)
 - **Plateforme :** Proxmox VE
 - **Stockage :** ZFS RAID-Z2
-- **Réseau :** UniFi UDM + switch managé + VLANs
+- **Réseau :** UniFi Dream Machine (UDM) + Unifi USW 16 ports managés switch + VLANs
 - **Workloads :** Docker Compose (d’abord), puis Swarm, puis Kubernetes
 
 ---
@@ -129,7 +129,7 @@ Lisible pour :
 
 ## 6. Connectivité & exposition (contournement CGNAT)
 
-**Problème :** CGNAT Starlink empêche l’inbound direct.  
+**Problème :** CGNAT 5G empêche l’inbound direct.  
 **Solution :** le VPS public est l’unique point d’entrée.
 
 ### Chemin par défaut

@@ -94,7 +94,7 @@ It aims to be readable by:
 ### Private Homelab (Portugal)
 - **Platform:** Proxmox VE
 - **Storage:** ZFS RAID-Z2
-- **Network:** UniFi UDM + managed switch + VLAN segmentation
+- **Network:** UniFi Dream Machine (UDM) + Unifi USW 16 port managed switch + VLAN segmentation
 - **Workloads:** Docker Compose (first), then Swarm, then Kubernetes
 
 ---
@@ -129,7 +129,7 @@ It aims to be readable by:
 
 ## 6. Public exposure & connectivity (CGNAT bypass)
 
-**Problem:** Starlink CGNAT blocks inbound connections.  
+**Problem:** 5G CGNAT blocks inbound connections.  
 **Solution:** a Swiss VPS is the **only** public ingress.
 
 ### Default traffic path
