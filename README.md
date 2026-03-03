@@ -2,7 +2,7 @@
 **DevOps • Cloud Engineering • DevSecOps • Platform Engineering**
 
 **Owner:** @Dr-LaBulle  
-**Last update:** 2026-03-01  
+**Last update:** 2026-03-03  
 **French version:** [`README_FR.md`](README_FR.md)
 
 A production-inspired **hybrid homelab** built as a long-term **skills showcase**:
@@ -18,7 +18,7 @@ A production-inspired **hybrid homelab** built as a long-term **skills showcase*
 
 ---
 
-## Ethos & Principles (Why “Sovereign”)
+## Ethos & Principles (Sovereignty-first)
 
 This project is not only technical; it also reflects engineering choices:
 
@@ -137,8 +137,8 @@ It aims to be readable by:
 2. **Traefik** routes HTTPS
 3. Backends reached through **WireGuard** tunnel to the homelab
 
-### DNS & TLS (ClouDNS)
-- Domain is managed with **ClouDNS** (kept generic in this repo)
+### DNS & TLS (Infomaniak)
+- Domain is managed with **Infomaniak** (kept generic in this repo)
 - TLS via Let’s Encrypt (prefer **DNS-01** challenge)
 - Public DNS only exposes intended services; internal endpoints remain private
 
@@ -389,7 +389,7 @@ Legend: ⬜ planned • 🟨 in progress • ✅ done
 |--------|------------|------------|--------|------|
 | Network | VLANs (10/20/30/40) implemented | 2026-04 | ⬜ | UniFi rules documented |
 | Network | WireGuard site-to-site stable | 2026-04 | ⬜ | auto-reconnect |
-| Ingress | Traefik on VPS with TLS | 2026-04 | ⬜ | ACME DNS-01 |
+| Ingress | Traefik on VPS with TLS | 2026-04 | ✅ | ACME DNS-01 (Infomaniak) |
 | Containers | **Compose baseline (single-node)** | 2026-03/04 | ⬜ | MVP stacks |
 | Containers | **Swarm bootstrap + migrate stacks** | 2026-04/05 | ⬜ | overlay + secrets |
 | Observability | LGTM baseline dashboards + alerts | 2026-04 | ⬜ | baseline rules |

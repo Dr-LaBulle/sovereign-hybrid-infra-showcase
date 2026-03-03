@@ -122,7 +122,7 @@ Exemple (auto-refresh 300s) :
 </head>
 <body>
   <div class="card">
-    <h1>Sovereign Bridge</h1>
+    <h1>Platform Gateway</h1>
     <p>Passerelle (edge) : <span class="ok">ACTIVE</span></p>
     <p>Backend lab : <span class="status">HORS-LIGNE</span></p>
 

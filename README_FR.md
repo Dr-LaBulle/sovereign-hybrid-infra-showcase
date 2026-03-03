@@ -2,7 +2,7 @@
 **DevOps • Cloud Engineering • DevSecOps • Platform Engineering**
 
 **Owner :** @Dr-LaBulle  
-**Dernière mise à jour :** 2026-03-01  
+**Dernière mise à jour :** 2026-03-03  
 **Version anglaise :** [`README.md`](README.md)
 
 Ce dépôt est une **vitrine** qui documente et automatise un lab hybride réaliste, pensé pour :
@@ -18,7 +18,7 @@ Ce dépôt est une **vitrine** qui documente et automatise un lab hybride réali
 
 ---
 
-## Éthique & principes (Pourquoi “Sovereign”)
+## Éthique & principes (approche sovereignty-first)
 
 Ce projet est technique, mais il porte aussi des choix d’ingénierie :
 
@@ -137,8 +137,8 @@ Lisible pour :
 2. **Traefik** route le HTTPS
 3. Backends joints via **WireGuard** vers le homelab
 
-### DNS & TLS (ClouDNS)
-- Domaine géré chez **ClouDNS** (détails génériques dans ce repo)
+### DNS & TLS (Infomaniak)
+- Domaine géré chez **Infomaniak** (détails génériques dans ce repo)
 - TLS via Let’s Encrypt (préférence **DNS-01**)
 - DNS public limité aux services exposés ; endpoints internes restent privés
 
@@ -373,7 +373,7 @@ Légende : ⬜ prévu • 🟨 en cours • ✅ fait
 |--------|----------|-----------|--------|------|
 | Réseau | VLANs (10/20/30/40) | 2026-04 | ⬜ | règles UniFi doc |
 | Réseau | WireGuard site-à-site stable | 2026-04 | ⬜ | auto-reconnect |
-| Ingress | Traefik sur VPS + TLS | 2026-04 | ⬜ | ACME DNS-01 |
+| Ingress | Traefik sur VPS + TLS | 2026-04 | ✅ | ACME DNS-01 (Infomaniak) |
 | Conteneurs | **Compose baseline (single-node)** | 2026-03/04 | ⬜ | MVP stacks |
 | Conteneurs | **Swarm bootstrap + migrate stacks** | 2026-04/05 | ⬜ | overlay + secrets |
 | Obs | LGTM dashboards baseline | 2026-04 | ⬜ | alerting base |
