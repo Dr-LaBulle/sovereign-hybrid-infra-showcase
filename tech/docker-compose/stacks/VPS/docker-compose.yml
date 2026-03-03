@@ -22,7 +22,7 @@ services:
       - --entrypoints.websecure.address=:443
 
       # ACME (Let's Encrypt PRODUCTION) - DNS-01 Infomaniak
-      - --certificatesresolvers.le.acme.email=dr.labulle@proton.me
+      - --certificatesresolvers.le.acme.email=${ACME_EMAIL}
       - --certificatesresolvers.le.acme.storage=/letsencrypt/acme.json
       - --certificatesresolvers.le.acme.keytype=RSA4096
       - --certificatesresolvers.le.acme.dnschallenge=true

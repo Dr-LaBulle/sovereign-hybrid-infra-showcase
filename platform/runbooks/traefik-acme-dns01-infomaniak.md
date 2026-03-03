@@ -38,6 +38,7 @@ Traefik doit pouvoir créer des enregistrements TXT `_acme-challenge.*` via l’
 
 Variable requise :
 - `INFOMANIAK_ACCESS_TOKEN`
+- `ACME_EMAIL`
 
 Stockage recommandé sur le VPS :
 - `/opt/traefik/.env` (permissions `0600`, propriétaire `root:root`)
@@ -76,7 +77,10 @@ sudo nano /opt/traefik/.env
 Contenu :
 ```text
 INFOMANIAK_ACCESS_TOKEN=...
+ACME_EMAIL=admin@example.net
 ```
+
+Astuce : un template versionné est disponible dans `tech/docker-compose/stacks/VPS/.env.example`.
 
 Durcissement :
 ```bash
